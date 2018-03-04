@@ -7,7 +7,6 @@ HERO_ENDPOINT = 'https://api.opendota.com/api/heroes?'
 REG_MATCH_BATCH_ENDPOINT = 'https://api.opendota.com/api/publicMatches'
 
 REG_MATCH_FILE = 'data/reg_matches.json'
-DETAILED_MATCH_FILE = 'data/detailed_matches.json'
 HERO_PATH = 'data/heroes.json'
 
 #### Functions #################################################################
