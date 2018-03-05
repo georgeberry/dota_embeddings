@@ -97,7 +97,7 @@ def load_data(path):
 
 df = load_data('data/reg_matches.json')
 
-df = df.loc[df['avg_mmr'] > 4500]
+df = df.loc[df['avg_mmr'] < 2000]
 
 X_pd = df[[
     'dire_0',
@@ -152,7 +152,7 @@ loss_function = nn.NLLLoss()
 model = DotaEmbedding(121, 2, hidden_size=128)
 optimizer = optim.SGD(model.parameters(), lr=0.001)
 
-for epoch in range(100):
+for epoch in range(1):
     total_loss = 0
     for idx, batch in enumerate(dl):
         context = autograd.Variable(batch[0])
@@ -173,7 +173,7 @@ for epoch in range(100):
     print(
         'Epoch {epoch}, loss {loss}'.format(
             epoch=epoch,
-            total_loss / X.shape[0],
+            loss=total_loss / X.shape[0],
         )
     )
     losses.append(total_loss)
