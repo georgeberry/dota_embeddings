@@ -1,5 +1,8 @@
 ## Embed Dota 2 heroes in two dimensions
 
+![picture](https://github.com/georgeberry/dota_embeddings/blob/master/data/p1.png|)
+
+
 The process is simple here: embed heroes just like words, but pick a hidden dimension of size 2. We could pick a larger number of latent dimensions for other tasks, but my goal was to quickly visualize the heroes in 2 dimensions. An alternative strategy would be to embed heroes in > 2 dimensions and then use a t-SNE for dimensionality reduction.
 
 Also for simplicity I embed from the Radiant perspective, so if you embed dire heroes you might get slightly different results. I ignore order pick order effects, which could also add interesting complexity.
