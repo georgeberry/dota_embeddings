@@ -20,9 +20,11 @@ R
 - ggplot / tidyverse
 - ggrepel
 
+### [Download data directly so you don't cost OpenDota more bandwidth](https://www.dropbox.com/s/qcawg7syrmm184p/reg_matches.json.bz2?dl=0)
+
 ### How to run
 
 1. Make sure your paths are right. Either naviagte to the `dota_embeddings` folder or change paths to be absolute.
-2. Run `crawl.py` for awhile
+2. Run `crawl.py` for awhile or click the download link above
 3. Run `embed.py`
 4. Open up R and visualize using `visualize.R`
